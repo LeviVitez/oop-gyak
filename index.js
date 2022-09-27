@@ -18,12 +18,12 @@ class zene {
   }
 }
 
-function sum() {
-  var sum = 0;
+function ossz() {
+  var ossz = 0;
   for (let i = 0; i < zenék.length; i++) {
-    sum += zenék[i].length;
+    ossz += zenék[i].length;
   }
-  return sum;
+  return ossz;
 }
 
 function addToList() {
@@ -32,12 +32,12 @@ function addToList() {
     parseInt(document.getElementById("length").value)
   );
   zenék.push(data);
-  var sPlaceHolder = sum();
-  document.getElementById("sum").innerText =
-    "A zeneszámok össz hossza: " + sPlaceHolder + " perc";
+  var sPlaceHolder = ossz();
+  document.getElementById("ossz").innerText =
+    "A zeneszámok össz hossza: " + sPlaceHolder + " másodperc";
 }
 function init() {
   document.getElementById("add").addEventListener("click", addToList);
 }
 document.addEventListener("DOMContentLoaded", init);
-console.log(sum());
+console.log(ossz());
