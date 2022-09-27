@@ -13,9 +13,8 @@ let zenek=[
     Zene.hossz
 ];
 
-kiir(){
-    console.log(user.nev, user.eletkor);
-}
+
+
 function hozzad() {
     let nev= document.getElementById("nev").value;
     let hossz= parseFloat(document.getElementById("hossz").value); 
