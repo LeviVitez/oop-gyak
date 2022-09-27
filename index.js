@@ -8,10 +8,7 @@ constructor(nev,hossz){
 }
 }
 
-let zenek=[
-    Zene.nev,
-    Zene.hossz
-];
+let zenek=[];
 
 
 
@@ -20,11 +17,7 @@ function hozzad() {
     let hossz= parseFloat(document.getElementById("hossz").value); 
     console.log(nev)
     console.log(hossz)
+        
 
-    new zenek.nev(nev)
-    new zenek.hossz(hossz)
-
-    console.log(zenek.nev)
-    console.log(zenek.hossz)
 
 }   
